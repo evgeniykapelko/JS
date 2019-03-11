@@ -1,0 +1,46 @@
+<?php declare(strict_types=1);
+
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "exampleUiComponent": {
+                    "component": "Learning_JS/js/ui-component"
+                }
+            }
+        }
+        }
+    }
+</script>
+
+<!--"startSimple": {
+                    "component": "Learning_JS/js/with-ko-track",
+                    "base_url": "<?/*= $block->escapeJs($block->getBaseUrl()) */?>"
+                }-->
+<!--<div data-bind="scope: 'startSimple'">
+    <h2 data-bind="text: title"></h2>
+    <pre data-bind="text: JSON.stringify(config, null, 2)"></pre>
+    <pre data-bind="text: output"></pre>
+    <table>
+        <tr>
+            <th data-bind="text: label"></th>
+        </tr>
+         ko foreach: items
+        <tr>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: qty"></td>
+            <td data-bind="text: price"></td>
+        </tr>
+
+         /ko
+    </table>
+    <ul data-bind="foreach: values">
+        <li data-bind="text: $data"></li>
+    </ul>
+</div>-->
+<div data-bind="scope: 'exampleUiComponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
